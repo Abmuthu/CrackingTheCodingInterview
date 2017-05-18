@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 public class IsUnique {
 
-	// version 1 : using HashSet
+	// version 1 : using HashSet. time: O(n) space: O(n)
 	public boolean areCharactersUniqueV1(String inp) {
 		Set<Character> charSet = new HashSet<>();
 		for (int i = 0; i < inp.length(); i++) {
@@ -19,7 +19,7 @@ public class IsUnique {
 		return true;
 	}
 
-	// version 2 : using int[] mapping of 128 characters
+	// version 2 : using int[] mapping of 128 characters. time: O(n) space: O(n)
 	public boolean areCharactersUniqueV2(String inp) {
 		if (inp.length() > 128) {
 			return false;
@@ -37,7 +37,7 @@ public class IsUnique {
 
 	}
 
-	// version 3 : using int variable to store (supports < 32 letters) 
+	// version 3 : using int variable to store (supports < 32 letters). time: O(n) space: O(1) 
 	public boolean areCharactersUniqueV3(String inp) {
 		// supporting only 26 characters
 		if (inp.length() > 26) {
