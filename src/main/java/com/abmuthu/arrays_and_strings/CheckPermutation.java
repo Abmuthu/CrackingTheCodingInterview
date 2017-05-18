@@ -2,6 +2,9 @@ package com.abmuthu.arrays_and_strings;
 
 import java.util.Arrays;
 
+/* Core concept: Have to check if same elements
+are present in both the strings. */
+
 public class CheckPermutation {
 
 	// version 1 : using sorting. time: O(nlog n) space: O(1) 

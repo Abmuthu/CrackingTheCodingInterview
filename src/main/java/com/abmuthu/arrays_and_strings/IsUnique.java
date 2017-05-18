@@ -3,6 +3,10 @@ package com.abmuthu.arrays_and_strings;
 import java.util.Set;
 import java.util.HashSet;
 
+/* Core Concept: Remember previously visited characters, retrieve 
+it quickly and compare with current character.
+*/
+
 public class IsUnique {
 
 	// version 1 : using HashSet. time: O(n) space: O(n)
