@@ -16,7 +16,7 @@ public class CheckPermutation {
 	// version 2 : using int[] mapping. time: O(n) space: O(n)
 	public boolean isPermuationV2(String str1, String str2) {
 		int[] charMap = new int[128];
-		
+
 		if (str1.length() > 128 || str2.length() > 128) {
 			System.out.println("Illegal Argument");
 		}
@@ -27,7 +27,7 @@ public class CheckPermutation {
 			charMap[ch]++;
 		}
 
-		// decount the letters and check if its negative
+		// decount the letters and check if count is negative
 		for (int i = 0; i < str2.length(); i++) {
 			char ch = str2.charAt(i);
 			charMap[ch]--;
