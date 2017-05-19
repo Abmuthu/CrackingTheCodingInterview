@@ -9,7 +9,7 @@ import java.util.Map;
 public class PalindromePermutation {
 
 	// version 1: using hashmap. time: O(n) space: O(n)
-	public boolean canStringBecomePalindrome(String input) {
+	public boolean canStringBecomePalindromeV1(String input) {
 		if (input.length() == 1) {
 			return true;
 		}
@@ -48,6 +48,6 @@ public class PalindromePermutation {
 		} else {
 			throw new IllegalArgumentException();
 		}
-		System.out.println(new PalindromePermutation().canStringBecomePalindrome(input));
+		System.out.println(new PalindromePermutation().canStringBecomePalindromeV1(input));
 	}
 }
