@@ -2,6 +2,7 @@ package com.abmuthu.linked_lists;
 
 public class DeleteMiddleNode {
 
+	// make second Pointer jump twice as first Pointer. time: O(n/2) space: O(1)
 	public void deleteMiddle(Node head) {
 		Node firstPointer = head;
 		Node secondPointer = head;
