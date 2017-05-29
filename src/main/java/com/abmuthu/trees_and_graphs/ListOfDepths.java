@@ -6,7 +6,7 @@ import java.util.LinkedList;
 public class ListOfDepths {
 
 	public static ArrayList<ArrayList<Node>> lists(Node root) {
-		
+
 		ArrayList<ArrayList<Node>> masterList = new ArrayList<ArrayList<Node>>();
 		LinkedList<Node> queue = new LinkedList<>();
 		queue.add(root);
@@ -63,7 +63,5 @@ public class ListOfDepths {
 
 		return root;
 	}
-
-
 
 }
